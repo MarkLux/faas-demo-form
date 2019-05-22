@@ -14,6 +14,7 @@ type InfoModel struct {
 }
 
 func (s *GoldService) OnInit() {
+// for init
 }
 
 func (s *GoldService) OnHandle(req *common.GoldRequest, rsp *common.GoldResponse) error {
