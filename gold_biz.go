@@ -2,7 +2,6 @@ package gold
 
 import (
 	"github.com/MarkLux/GOLD/serving/common"
-	"github.com/MarkLux/GOLD/serving/wrapper/db"
 	"log"
 )
 
