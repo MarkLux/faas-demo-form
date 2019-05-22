@@ -1,7 +1,7 @@
 package gold
 
 import (
-	"github.com/MarkLux/GOLD/serving/rpc/goldrpc"
+	"github.com/MarkLux/GOLD/serving/common"
 	"github.com/MarkLux/GOLD/serving/wrapper/db"
 	"log"
 )
@@ -17,7 +17,7 @@ type InfoModel struct {
 func (s *GoldService) OnInit() {
 }
 
-func (s *GoldService) OnHandle(req *goldrpc.GoldRequest, rsp *goldrpc.GoldResponse) error {
+func (s *GoldService) OnHandle(req *common.GoldRequest, rsp *common.GoldResponse) error {
 	infoModel := InfoModel{}
 	infoModel.Name = req.Data["name"].(string)
 	infoModel.Sex = req.Data["sex"].(string)
